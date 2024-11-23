@@ -9,21 +9,28 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background: linear-gradient(135deg, #1c1f26, #3a3d50);
+            color: #eaeaea;
             text-align: center;
+            min-height: 100vh;
+            background-attachment: fixed;
+            background-size: cover;
         }
 
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         h1 {
-            font-size: 2em;
-            color: #444;
+            font-size: 2.5em;
+            color: #ffcc00;
             margin-bottom: 30px;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
         }
 
         /* Lista de animes */
@@ -38,15 +45,16 @@
             justify-content: space-between;
             margin: 15px 0;
             padding: 10px;
-            background: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .anime-item:hover {
-            transform: scale(1.02);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: scale(1.03);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
         }
 
         .anime-image {
@@ -59,9 +67,10 @@
         }
 
         .anime-title {
-            font-size: 1.1em;
-            color: #222;
+            font-size: 1.2em;
+            color: #ffcc00;
             text-align: left;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
             flex-grow: 1;
         }
 
@@ -80,7 +89,7 @@
             }
 
             .anime-title {
-                font-size: 1em;
+                font-size: 1.1em;
                 text-align: center;
             }
         }
